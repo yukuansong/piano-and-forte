@@ -2,13 +2,35 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Headers from './pages/header';
+import Students from './pages/students';
+import NoPage from './pages/noPage';
+
 import reportWebVitals from './reportWebVitals';
+
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Headers />}>
+          <Route index element={<App />} />
+          <Route path="students" element={<Students />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  // </React.StrictMode>
+  /**
+   * I figured it out after reading about it on twitter. 
+   * Apparently React version 18 renders useEffect twice during test 
+   * mode but not in production mode, which explains why it did not render twice 
+   * when I deployed the site online. I also found out that you can bypass 
+   * this or temporarily disable this by removing the React.strictMode tags 
+   * in the index.js file.
+   */
 );
 
 // If you want to start measuring performance in your app, pass a function
