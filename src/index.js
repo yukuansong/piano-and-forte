@@ -18,6 +18,7 @@ root.render(
         <Route path="/" element={<Headers />}>
           <Route index element={<App />} />
           <Route path="students" element={<Students />} />
+          <Route path="piano-and-forte" element={<App />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
