@@ -21,14 +21,26 @@
     left: -10px;
 }
 
-.pnf-circle:after {
-    content: "";
+/* .pnf-circle:after {
+    content: "Piano and Forte";
     position: absolute;
     height: 15px;
     width: 250px;
     border: solid 5px blueviolet;
     left: -10px;
     top: 50px;
+} */
+
+.pnf-base-container {
+    position: absolute;
+    height: 15px;
+    width: 250px;
+    border: solid 5px blueviolet;
+    left: -10px;
+    top: 50px;
+    background-color:blueviolet;
+    color: white;
+
 }
 
 .pnf-keys {
