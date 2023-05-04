@@ -5,7 +5,7 @@ import PnfLogo from './pnf-logo';
 function Headers() {
     return (
         <div>
-        <h1>Music gives color to the air of moment</h1>
+        <h1 style={{"color": "green"}}>Music acts like a magic key, to which the most tightly closed heart opens</h1>
         <PnfLogo/>
 
         <Outlet/>

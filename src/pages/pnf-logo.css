@@ -22,11 +22,11 @@
 }
 
 .pnf-circle:after {
-    content: " Piano & Forte";
+    content: "";
     position: absolute;
     height: 15px;
     width: 250px;
-    border: solid 5px green;
+    border: solid 5px blueviolet;
     left: -10px;
     top: 50px;
 }
