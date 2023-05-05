@@ -5,31 +5,12 @@
 }
 .pnf-circle {
     position: relative;
-    height: 100px;
+    height: 50px;
     width: 100px;
     border: solid 10px blue;
-    border-radius: 100px;
+    border-radius: 125px 125px 0 0;
+    margin: 10px 5px 25px 5px;
 }
-
-.pnf-circle::before {
-    content: "";
-    position: absolute;
-    height: 50px;
-    width: 120px;
-    border-top: solid 60px white;
-    top: 50px;
-    left: -10px;
-}
-
-/* .pnf-circle:after {
-    content: "Piano and Forte";
-    position: absolute;
-    height: 15px;
-    width: 250px;
-    border: solid 5px blueviolet;
-    left: -10px;
-    top: 50px;
-} */
 
 .pnf-base-container {
     position: absolute;
@@ -45,7 +26,7 @@
 
 .pnf-keys {
     display: flex;
-    top: 5px;
+    top: 16px;
     left: -25px;
     position: relative;
 }

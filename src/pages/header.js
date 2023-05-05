@@ -1,16 +1,21 @@
-import {Outlet} from 'react-router-dom'
+import { Outlet, Link } from "react-router-dom";
+import "./header.css";
 
-import PnfLogo from './pnf-logo';
+import PnfLogo from "./pnf-logo";
 
 function Headers() {
-    return (
-        <div>
-        <h1 style={{"color": "green"}}>Music acts like a magic key, to which the most tightly closed heart opens</h1>
-        <PnfLogo/>
+  return (
+    <div>
+      <div className="header-menu-bar-container">
+        <PnfLogo />
 
-        <Outlet/>
-        </div>
-    )
+        <Link className="link" to="new path 1">Home</Link>
+        <Link className="link" to="new path 2">Make Appointment</Link>
+      </div>
+
+      <Outlet />
+    </div>
+  );
 }
 
 export default Headers;
