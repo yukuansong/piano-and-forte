@@ -3,19 +3,46 @@ import "./header.css";
 
 import PnfLogo from "./pnf-logo";
 
-function Headers() {
+import { RecoilRoot, useRecoilValue } from "recoil";
+import { displayLogout } from "./recoil_state";
+
+function MyHeaders() {
   return (
     <div>
       <div className="header-menu-bar-container">
         <PnfLogo />
 
-        <Link className="link" to="new path 1">Home</Link>
-        <Link className="link" to="new path 2">Make Appointment</Link>
+        <Link className="link" to="/">
+          Home
+        </Link>
+        <Link className="link" to="/appointment">
+          Schedule Free Class
+        </Link>
+        <Link className="link" to="/signIn">
+          Sign in
+        </Link>
+        <Link className="link" to="/createUser">
+          Sign up
+        </Link>
+        
+        {useRecoilValue(displayLogout) && (
+          <Link className="link" to="/logOut">
+            Sign out
+          </Link>
+        )}
       </div>
 
       <Outlet />
-    </div>
+      </div>
   );
 }
 
+
+function Headers() {
+  return (
+    <RecoilRoot>
+      <MyHeaders/>
+    </RecoilRoot>
+  )
+}
 export default Headers;

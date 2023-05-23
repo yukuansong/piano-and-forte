@@ -8,6 +8,7 @@
   grid-template-columns: 50% 50%;
   border: solid red;
   gap: 10px;
+  margin: 20px;
 }
 
 .app-header {

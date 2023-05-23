@@ -5,6 +5,13 @@ import App from './App';
 import Headers from './pages/header';
 import Students from './pages/students';
 import NoPage from './pages/noPage';
+import Appointment from './pages/appointment';
+import SignIn from './pages/signIn';
+// import SignUp from './pages/signUp';
+import LogOut from './pages/logOut';
+import SendPasswordReset from './pages/passwordReset';
+import CreateUser from './pages/createUser';
+import StudentContact from './pages/studentContact';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -13,16 +20,24 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
+    
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Headers />}>
           <Route index element={<App />} />
           <Route path="students" element={<Students />} />
           <Route path="piano-and-forte" element={<App />} />
+          <Route path="appointment" element={<Appointment/>} />
+          <Route path="signIn" element={<SignIn />} />
+          <Route path="logOut" element={<LogOut/>} />
+          <Route path="reset" element={<SendPasswordReset/>} />
+          <Route path="createUser" element={<CreateUser />} />
+          <Route path="studentContact" element={<StudentContact />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
+    
   // </React.StrictMode>
   /**
    * I figured it out after reading about it on twitter. 
