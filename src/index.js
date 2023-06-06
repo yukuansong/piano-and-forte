@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Headers from './pages/header';
-import Students from './pages/students';
+import Home from './pages/home'
+import AppointmentList from './pages/appointmentList';
 import NoPage from './pages/noPage';
 import Appointment from './pages/appointment';
 import SignIn from './pages/signIn';
@@ -24,15 +25,16 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Headers />}>
-          <Route index element={<App />} />
-          <Route path="students" element={<Students />} />
-          <Route path="piano-and-forte" element={<App />} />
+          <Route index element={<Home />} />
+          <Route path="appointmentList" element={<AppointmentList />} />
+          <Route path="piano-and-forte" element={<Home />} />
           <Route path="appointment" element={<Appointment/>} />
           <Route path="signIn" element={<SignIn />} />
           <Route path="logOut" element={<LogOut/>} />
           <Route path="reset" element={<SendPasswordReset/>} />
           <Route path="createUser" element={<CreateUser />} />
           <Route path="studentContact" element={<StudentContact />} />
+          <Route path="home" element={<Home/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

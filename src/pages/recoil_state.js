@@ -11,7 +11,7 @@ const inputCollection = atom({
     name: '',
     email: '',
     phone: '',
-    timeDay: '',
+    date: new Date(),
     school: 'Ronald McNair Elementary School'
   }
 

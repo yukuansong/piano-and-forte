@@ -19,7 +19,6 @@ function CreateUser(prep) {
 
   const onInputChange = (e) => {
     const { name, value } = e.target;
-    console.log("name + value: " + name + " " + value);
     setInput((prev) => ({
       ...prev,
       [name]: value,

@@ -30,6 +30,10 @@ function MyHeaders() {
             Sign out
           </Link>
         )}
+
+        {useRecoilValue(displayLogout) && <Link className="link" to="/appointmentList">
+          Appointments
+        </Link>}
       </div>
 
       <Outlet />

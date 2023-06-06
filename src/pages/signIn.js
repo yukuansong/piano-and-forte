@@ -28,12 +28,11 @@ function SignIn(prop) {
     const auth = getAuth();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredentials) => {
-        console.log("login user: " + userCredentials.user);
         setDisplayLogout(true);
       })
       .catch((error) => {
         // console.log(error.message);
-        console.log(error.code);
+      
         setIsDisplayed(true);
       });
   };

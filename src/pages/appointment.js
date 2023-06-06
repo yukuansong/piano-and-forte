@@ -31,19 +31,24 @@ function Appointment(prep) {
 
   const [inputField, setInputField] = useState({
     am_pm: "AMPM",
-    date: (new Date()).toISOString().substring(0,10),
+    date: new Date().toISOString().substring(0,10),
     school: "Ronald McNair Elementary School"
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    console.log("name and value: " + name + value);
     setInputField({
       ...inputField,
       [name]: value,
     });
   };
 
+  const updateStateDate = (newDate) =>{
+    setInputField({
+      ...inputField,
+      date: newDate
+    })
+  }
   const handleSchoolChange =(e) => {
     setCollection({...collection, school: e.target.value});
   }
@@ -65,6 +70,7 @@ function Appointment(prep) {
           onChange={handleChange}
           required
         />
+        {typeof(inputField.date)}
       </div>
       <div className="appointment-time-of-day">
         <p>Time of day</p>
@@ -109,7 +115,7 @@ function Appointment(prep) {
         </div>
       </div>
 
-      <AppointmentTimeslot date_am_pm={inputField} />
+      <AppointmentTimeslot updateStateDate={updateStateDate} date_am_pm={inputField} />
     </div>
   );
 }

@@ -3,17 +3,17 @@ import {collection, getDocs} from 'firebase/firestore';
 
 import db from '../firebaseConfig';
 
-import "./students.css";
+import "./appointmentList.css";
 
-function Students() {
-    const [users, setUsers] = useState([]);
+function AppointmentList() {
+    const [appointments,setAppointments] = useState([]);
 
     useEffect(() => {
         
         const fetchData = async () => {
-            const querySnapshot = await getDocs(collection(db, "users"));
+            const querySnapshot = await getDocs(collection(db, "appointent"));
             querySnapshot.forEach((doc) => {
-                setUsers((prevState) => [...prevState, doc.data()]);
+                setAppointments((prevState) => [...prevState, doc.data()]);
             });
         }
 
@@ -28,21 +28,21 @@ function Students() {
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Gender</th>
-                        <th>School</th>
-                        <th>Phone Number</th>
                         <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>School</th>
+                        <th>Date Time</th>
                     </tr>
                     </thead>
                     <tbody>
                         {
-                            users && users.map((user,i) =>
+                            appointments && appointments.map((appointment,i) =>
                                 <tr key={i}>
-                                    <td>{user.firstName} {user.lastName}</td>
-                                    <td>{user.gender}</td>
-                                    <td>{user.school}</td>
-                                    <td>{user.phone}</td>
-                                    <td>{user.email}</td>
+                                    <td>{appointment.name} {appointment.lastName}</td>
+                                    <td>{appointment.email}</td>
+                                    <td>{appointment.phone}</td>
+                                    <td>{appointment.school}</td>
+                                    <td>{appointment.date}</td>
                                 </tr>
                                 )
                         }
@@ -52,4 +52,4 @@ function Students() {
     )
 }
 
-export default Students;
+export default AppointmentList;

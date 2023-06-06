@@ -37,7 +37,6 @@ function App() {
   }
 
   const handleChange = (e) => {
-    console.log("value: " + e.target.value);
     setUser({...user,[e.target.name]: e.target.value})
   }
 
