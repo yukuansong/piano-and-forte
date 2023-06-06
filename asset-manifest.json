@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/piano-and-forte/static/css/main.91e38bfd.css",
-    "main.js": "/piano-and-forte/static/js/main.19dbf5ab.js",
+    "main.css": "/piano-and-forte/static/css/main.493e8637.css",
+    "main.js": "/piano-and-forte/static/js/main.a17d6b28.js",
     "static/js/787.cc06fb8f.chunk.js": "/piano-and-forte/static/js/787.cc06fb8f.chunk.js",
     "static/media/logo.svg": "/piano-and-forte/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/piano-and-forte/index.html",
-    "main.91e38bfd.css.map": "/piano-and-forte/static/css/main.91e38bfd.css.map",
-    "main.19dbf5ab.js.map": "/piano-and-forte/static/js/main.19dbf5ab.js.map",
+    "main.493e8637.css.map": "/piano-and-forte/static/css/main.493e8637.css.map",
+    "main.a17d6b28.js.map": "/piano-and-forte/static/js/main.a17d6b28.js.map",
     "787.cc06fb8f.chunk.js.map": "/piano-and-forte/static/js/787.cc06fb8f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91e38bfd.css",
-    "static/js/main.19dbf5ab.js"
+    "static/css/main.493e8637.css",
+    "static/js/main.a17d6b28.js"
   ]
 }
