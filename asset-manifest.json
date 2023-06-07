@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/piano-and-forte/static/css/main.493e8637.css",
-    "main.js": "/piano-and-forte/static/js/main.a17d6b28.js",
+    "main.css": "/piano-and-forte/static/css/main.52979212.css",
+    "main.js": "/piano-and-forte/static/js/main.74dc07f3.js",
     "static/js/787.cc06fb8f.chunk.js": "/piano-and-forte/static/js/787.cc06fb8f.chunk.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/piano-and-forte/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/piano-and-forte/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/piano-and-forte/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/piano-and-forte/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/piano-and-forte/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/logo.svg": "/piano-and-forte/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/piano-and-forte/index.html",
-    "main.493e8637.css.map": "/piano-and-forte/static/css/main.493e8637.css.map",
-    "main.a17d6b28.js.map": "/piano-and-forte/static/js/main.a17d6b28.js.map",
+    "main.52979212.css.map": "/piano-and-forte/static/css/main.52979212.css.map",
+    "main.74dc07f3.js.map": "/piano-and-forte/static/js/main.74dc07f3.js.map",
     "787.cc06fb8f.chunk.js.map": "/piano-and-forte/static/js/787.cc06fb8f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.493e8637.css",
-    "static/js/main.a17d6b28.js"
+    "static/css/main.52979212.css",
+    "static/js/main.74dc07f3.js"
   ]
 }
